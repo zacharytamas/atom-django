@@ -1,0 +1,88 @@
+'.source.python.django':
+  'AutoField':
+    'prefix': 'auto'
+    'body': '${1:FIELDNAME} = models.AutoField()'
+  'BooleanField':
+    'prefix': 'boolean'
+    'body': '${1:FIELDNAME} = models.BooleanField(${2:default=True})'
+  'CharField':
+    'prefix': 'char'
+    'body': '${1:FIELDNAME} = models.CharField(${2:blank=True}, max_length=${3:100})'
+  'CommaSeparatedIntegerField':
+    'prefix': 'commaseparatedinteger'
+    'body': '${1:FIELDNAME} = models.CommaSeparatedIntegerField(max_length=$2)'
+  'DateField':
+    'prefix': 'date'
+    'body': '${1:FIELDNAME} = models.DateField(${2:default=datetime.datetime.today})'
+  'DateTimeField':
+    'prefix': 'datetime'
+    'body': '${1:FIELDNAME} = models.DateTimeField(${2:blank=True}${3:, default=datetime.datetime.now})'
+  'DecimalField':
+    'prefix': 'decimal'
+    'body': '${1:FIELDNAME} = models.DecimalField(max_digits=$2, decimal_places=$3)'
+  'EmailField':
+    'prefix': 'email'
+    'body': '${1:FIELDNAME} = models.EmailField()'
+  'FileField':
+    'prefix': 'file'
+    'body': '${1:FIELDNAME} = models.FileField(upload_to=${1:/path/for/upload})'
+  'FilePathField':
+    'prefix': 'filepath'
+    'body': '${1:FIELDNAME} = models.FilePathField(path="${1:/location/of/choices}"${2:, match="${3:regex}"}${4:, recursive=True})'
+  'FloatField':
+    'prefix': 'float'
+    'body': '${1:FIELDNAME} = models.FloatField()'
+  'ForeignKey':
+    'prefix': 'fk'
+    'body': '${1:FIELDNAME} = models.ForeignKey(${2:RELATED_MODEL})'
+  'IPAddressField':
+    'prefix': 'ipaddress'
+    'body': '${1:FIELDNAME} = models.IPAddressField(${2:blank=True})'
+  'ImageField':
+    'prefix': 'image'
+    'body': '${1:FIELDNAME} = models.ImageField(upload_to="${2:/dir/path}"${3:, height_field=$4}${5:, width_field=$6})'
+  'IntegerField':
+    'prefix': 'integer'
+    'body': '${1:FIELDNAME} = models.IntegerField(${2:blank=True, null=True})'
+  'ManyToManyField':
+    'prefix': 'manytomany'
+    'body': '${1:FIELDNAME} = models.ManyToManyField(${2:RELATED_MODEL})'
+  'Model Skeleton':
+    'prefix': 'model'
+    'body': 'class ${1:Modelname}(models.Model):\n\t"""${2:($1 description)}"""\n\t$0\n\n\tclass Admin:\n\t\tlist_display = (\'\',)\n\t\tsearch_fields = (\'\',)\n\n\tdef __unicode__(self):\n\t\treturn u"$1"\n'
+  'NullBooleanField':
+    'prefix': 'nullboolean'
+    'body': '${1:FIELDNAME} = models.NullBooleanField(${2:default=True})'
+  'PhoneNumberField':
+    'prefix': 'phonenumber'
+    'body': '${1:FIELDNAME} = models.PhoneNumberField(${2:blank=True})'
+  'PositiveIntegerField':
+    'prefix': 'positiveinteger'
+    'body': '${1:FIELDNAME} = models.PositiveIntegerField(${2:blank=True, null=True})'
+  'PositiveSmallIntegerField':
+    'prefix': 'positivesmallinteger'
+    'body': '${1:FIELDNAME} = models.PositiveSmallIntegerField(${2:blank=True, null=True})'
+  'SlugField':
+    'prefix': 'slug'
+    'body': '${1:slug} = models.SlugField(${2:prepopulate_from=("$3",$4)})'
+  'SmallIntegerField':
+    'prefix': 'smallinteger'
+    'body': '${1:FIELDNAME} = models.SmallIntegerField(${2:blank=True, null=True})'
+  'TextField':
+    'prefix': 'text'
+    'body': '${1:FIELDNAME} = models.TextField(${2:blank=True})'
+  'TimeField':
+    'prefix': 'time'
+    'body': '${1:FIELDNAME} = models.TimeField(${2:blank=True})'
+  'URLField':
+    'prefix': 'url'
+    'body': '${1:FIELDNAME} = models.URLField(${2:blank=True}, verify_exists=${3:True})'
+  'USStateField':
+    'prefix': 'usstate'
+    'body': '${1:FIELDNAME} = models.USStateField(${2:blank=True})'
+  'XMLField':
+    'prefix': 'xml'
+    'body': '${1:FIELDNAME} = models.XMLField(schema_path=${2:/path/to/RelaxNG}${3:, blank=True})'
+  'send_mail':
+    'prefix': 'sendmail'
+    'body': 'mail.send_mail("${1:Subject}", "${2:Message}", "${3:from@example.com}", ${4:["to@example.com"]}${5:, fail_silently=True})\n'

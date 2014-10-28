@@ -64,7 +64,7 @@
     'body': '${1:FIELDNAME} = models.PositiveSmallIntegerField(${2:blank=True, null=True})'
   'SlugField':
     'prefix': 'slug'
-    'body': '${1:slug} = models.SlugField(${2:prepopulate_from=("$3",$4)})'
+    'body': '${1:slug} = models.SlugField()'
   'SmallIntegerField':
     'prefix': 'smallinteger'
     'body': '${1:FIELDNAME} = models.SmallIntegerField(${2:blank=True, null=True})'
@@ -76,7 +76,7 @@
     'body': '${1:FIELDNAME} = models.TimeField(${2:blank=True})'
   'URLField':
     'prefix': 'url'
-    'body': '${1:FIELDNAME} = models.URLField(${2:blank=True}, verify_exists=${3:True})'
+    'body': '${1:FIELDNAME} = models.URLField(${2:blank=True})'
   'USStateField':
     'prefix': 'usstate'
     'body': '${1:FIELDNAME} = models.USStateField(${2:blank=True})'

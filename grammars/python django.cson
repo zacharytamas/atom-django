@@ -35,11 +35,6 @@
   }
 
   {
-    'match': '[a-z_]+\\.get_(object|list|iterator|count|values|values_iterator|in_bulk)'
-    'name': 'support.function.django.model'
-  }
-
-  {
     'include': 'source.python'
   }
 ]

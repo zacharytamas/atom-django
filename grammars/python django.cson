@@ -17,7 +17,7 @@
   }
 
   {
-    'begin': '(get_list_or_404|get_object_or_404|render_to_response|redirect|resolve_url)'
+    'begin': '(render_to_response|render|redirect|get_object_or_404|get_list_or_404|resolve_url)'
     'beginCaptures':
       '1':
         'name': 'support.function.django.shortcuts'

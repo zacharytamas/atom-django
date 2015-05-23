@@ -6,6 +6,12 @@
     "atom": "*",
     "node": "*"
   },
+  "keywords": [
+    "django",
+    "Django",
+    "python django",
+    "python"
+  ],
   "homepage": {
     "url": "https://github.com/zacharytamas/atom-django/"
   },

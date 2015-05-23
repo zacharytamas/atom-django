@@ -19,7 +19,7 @@
 
   # Form Field Types
   {
-    'begin': '(forms)(\\.)(BooleanField|CharField|ChoiceField|TypedChoiceField|DateField|DateTimeField|DecimalField|DurationField|EmailField|FileField|FilePathField|FloatField|ImageField|IntegerField|IPAddressField|GenericIPAddressField|MultipleChoiceField|TypedMultipleChoiceField|NullBooleanField|RegexField|SlugField|TimeField|URLField|UUIDField)'
+    'begin': '(forms)(\\.)(BooleanField|CharField|ChoiceField|TypedChoiceField|DateField|DateTimeField|DecimalField|DurationField|EmailField|FileField|FilePathField|FloatField|ImageField|IntegerField|IPAddressField|GenericIPAddressField|MultipleChoiceField|TypedMultipleChoiceField|NullBooleanField|RegexField|SlugField|TimeField|URLField|UUIDField|ComboField|MultiValueField|SplitDateTimeField|ModelChoiceField|ModelMultipleChoiceField)'
     'beginCaptures':
       '1':
         'name': 'support.class.django.form'

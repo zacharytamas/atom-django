@@ -12,6 +12,10 @@ Or Settings ➔ Packages ➔ Search for `django`
 
 ## Release Notes
 
+### 0.3.1
+
+* Fix a [syntax highlighting bug](https://github.com/zacharytamas/atom-django/issues/9).
+
 ### 0.1.0
 
 * Initial build of Django for Atom.

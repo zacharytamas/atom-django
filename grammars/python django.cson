@@ -35,16 +35,8 @@
 
   # Shortcut functions
   {
-    'begin': '(render_to_response|render|redirect|get_object_or_404|get_list_or_404|resolve_url)'
-    'beginCaptures':
-      '1':
-        'name': 'support.function.django.shortcuts'
-    'end': '(\\))'
-    'patterns': [
-      {
-        'include': '#function-call-arguments'
-      }
-    ]
+    'match': '(render_to_response|render|redirect|get_object_or_404|get_list_or_404|resolve_url)'
+    'name': 'support.function.django.shortcuts'
   }
 
   # Settings constants

@@ -8,7 +8,7 @@
 $ apm install atom-django
 ```
 
-Or Settings ➔ Packages ➔ Search for `django`
+Or Settings ➔ Install ➔ Search for `atom-django`
 
 ## Features
 

@@ -1,5 +1,7 @@
 # Django for Atom
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zacharytamas/atom-django.svg)](https://greenkeeper.io/)
+
 > Build Django apps faster with Atom.
 
 ## Install

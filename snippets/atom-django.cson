@@ -49,7 +49,7 @@
     'body': '${1:FIELDNAME} = models.ManyToManyField(${2:RELATED_MODEL})'
   'Model Skeleton':
     'prefix': 'model'
-    'body': 'class ${1:Modelname}(models.Model):\n\t"""${2:($1 description)}"""\n\t$0\n\n\tdef __unicode__(self):\n\t\treturn u"$1"\n'
+    'body': 'class ${1:Modelname}(models.Model):\n\t"""${2:($1 description)}"""\n\t$0\n\n\tdef __str__(self):\n\t\treturn "$1"\n'
   'NullBooleanField':
     'prefix': 'nullboolean'
     'body': '${1:FIELDNAME} = models.NullBooleanField(${2:default=True})'
